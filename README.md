@@ -10,3 +10,6 @@ The user writes their own reminders in the reminders.txt file. One reminder on e
 The script is then scheduled to run at whatever interval the user likes using cron. I have mine to pop up at 4am every Tuesday and Friday, using the command: 
 
 0 4 * * 2,5 XDG_RUNTIME_DIR=/run/user/$(id -u) /path/to/reminders/reminders.sh
+
+## Future Goals
+* Preventing the same reminder from appearing twice in the same notification. 
